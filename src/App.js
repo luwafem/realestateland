@@ -12,9 +12,9 @@ function App() {
   const [activeTab, setActiveTab] = useState('properties');
 
   const config = {
-    companyName: "Prime Estate",
+    companyName: "SecureAssets.ng",
     contactEmail: "contact@primeestate.com",
-    contactPhone: "+1 (555) 123-4567",
+    contactPhone: "07010001046",
     socialLinks: {
       facebook: "#",
       twitter: "#",

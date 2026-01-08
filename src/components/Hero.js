@@ -3,8 +3,20 @@ import { Search } from 'lucide-react';
 
 const Hero = ({ title, subtitle }) => {
   return (
-    <section className="relative bg-gradient-to-r from-primary-500 to-primary-700 text-white py-20">
-      <div className="container mx-auto px-4">
+    <section className="relative overflow-hidden bg-gradient-to-r from-primary-500/20 to-primary-700/20 text-white py-20">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+        }}
+      />
+      
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary-500/20 to-primary-700/20" />
+      
+      {/* Content */}
+      <div className="container relative z-10 mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             {title}
